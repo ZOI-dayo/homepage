@@ -5,6 +5,9 @@ import PrimaryButton from "./components/PrimaryButton.vue";
 import type { Work } from "./types/Work.ts";
 import type { Achivement } from "./types/Achivement.ts";
 import AchivementTimeline from "./components/AchivementTimeline.vue";
+import XIcon from "./components/Icons/XIcon.vue";
+import GithubIcon from "./components/Icons/GithubIcon.vue";
+import AtcoderIcon from "./components/Icons/AtcoderIcon.vue";
 
 const works: Work[] = [
   {
@@ -35,12 +38,76 @@ const works: Work[] = [
 const achivements: Achivement[] = [
   {
     date: "2024.12.08",
-    title: "ISUCON14 (全体115位 / 学生10位)",
+    title: "ISUCON14 出場 (全体115位 / 学生10位)",
   },
   {
     date: "2024.10.26",
-    title: "AtCoder 青色 到達",
+    title: "AtCoder 青色到達",
+    links: {
+      atcoder: "https://atcoder.jp/users/ZOIZOI/history/share/abc377",
+      x: "https://x.com/ZOI_dayo/status/1850178630565183963",
+    },
   },
+  {
+    date: "2024.07.17",
+    title: "traP機械学習講習会コンペ 出場 (学内2位)",
+    links: {
+      trap: "https://trap.jp/post/2286/",
+    },
+  },
+  {
+    date: "2024.07.05",
+    title: "ICPC2024国内予選 出場 (148位 / 部内18位)",
+    links: {
+      trap: "https://trap.jp/post/2286/",
+    },
+  },
+  {
+    date: "2024.06.16",
+    title: "traP春ハッカソン 出場 『発火村』 (最優秀賞)",
+    links: {
+      trap: "https://trap.jp/post/2255/",
+      github: "https://github.com/traP-jp/hakka-mura",
+    },
+  },
+  {
+    date: "2024.04.21",
+    title: "CPCTF2024出場 (10位・新入生内1位)",
+    links: {
+      trap: "https://trap.jp/post/2224/",
+    },
+  },
+  {
+    date: "2023.11.11",
+    title: "パソコン甲子園2023 プログラミング部門 本戦出場",
+  },
+  {
+    date: "2023.08.12",
+    title: "AtCoder 水色到達",
+  },
+  {
+    date: "2023.02.19",
+    title: "AtCoder 緑色到達",
+  },
+  {
+    date: "2022.12.11",
+    title: "JOI2022/2023 二次予選出場",
+  },
+  {
+    date: "2022.11.06",
+    title:
+      "パソコン甲子園2022 モバイル部門 本戦出場 (ベストデザイン賞・協賛企業賞)",
+  },
+];
+
+const activities: string[] = [
+  "traP 代表補佐",
+  // "GAME^3 Webフロント担当"
+];
+
+const certifications: string[] = [
+  "AtCoder 2級 (Algo青)",
+  "2級ウェブデザイン技能士",
 ];
 </script>
 
@@ -50,29 +117,38 @@ const achivements: Achivement[] = [
   >
     <div class="flex h-screen w-screen items-center justify-center">
       <div
-        class="flex h-[50rem] w-[75rem] flex-col items-center justify-center gap-24 border-x-2 border-text-secondary"
+        class="flex h-[40rem] w-[64rem] flex-col items-center justify-center gap-20 border-x-2 border-text-secondary"
       >
         <img
           src="/zoi_icon.png"
-          width="400"
-          height="400"
+          width="320"
+          height="320"
           class="rounded-[64px]"
           alt="logo"
         />
-        <span class="text-8xl font-extrabold">ZOI_dayo</span>
-        <div class="flex w-full">
-          <div class="flex grow items-center justify-center gap-4">
-            <img src="./assets/x_logo.svg" class="inline size-8" />
+        <span class="text-6xl font-extrabold">ZOI_dayo</span>
+        <div class="inline-flex gap-24">
+          <a
+            class="flex items-center justify-center gap-4"
+            href="https://x.com/ZOI_dayo"
+          >
+            <XIcon class="inline size-8" />
             <span class="font-mono text-2xl">@ZOI_dayo</span>
-          </div>
-          <div class="flex grow items-center justify-center gap-4">
-            <img src="./assets/x_logo.svg" class="inline size-8" />
-            <span class="font-mono text-2xl">@ZOI_dayo</span>
-          </div>
-          <div class="flex grow items-center justify-center gap-4">
-            <img src="./assets/x_logo.svg" class="inline size-8" />
-            <span class="font-mono text-2xl">@ZOI_dayo</span>
-          </div>
+          </a>
+          <a
+            class="flex items-center justify-center gap-4"
+            href="https://atcoder.jp/users/ZOIZOI"
+          >
+            <AtcoderIcon class="inline size-8" />
+            <span class="font-mono text-2xl">ZOIZOI</span>
+          </a>
+          <a
+            class="flex items-center justify-center gap-4"
+            href="https://github.com/ZOI-dayo"
+          >
+            <GithubIcon class="inline size-8" />
+            <span class="font-mono text-2xl">@ZOI-dayo</span>
+          </a>
         </div>
       </div>
     </div>
@@ -100,15 +176,25 @@ const achivements: Achivement[] = [
           </div>
         </TopPageContent>
         <TopPageContent title="Activities" subtitle="その他の活動">
-          <div class="mt-8 place-items-center">
-            <PrimaryButton>View all</PrimaryButton>
+          <div class="flex flex-wrap gap-4">
+            <div
+              v-for="activity in activities"
+              :key="activity"
+              class="inline-flex h-12 place-items-center rounded-lg border-2 border-secondary px-5 font-extrabold"
+            >
+              {{ activity }}
+            </div>
           </div>
         </TopPageContent>
         <TopPageContent title="Certification" subtitle="資格">
-          <div
-            class="y inline-flex h-12 place-items-center rounded-lg border-2 border-secondary px-5 font-extrabold"
-          >
-            2級Webデザイン技能士
+          <div class="flex flex-wrap gap-4">
+            <div
+              v-for="certification in certifications"
+              :key="certification"
+              class="inline-flex h-12 place-items-center rounded-lg border-2 border-secondary px-5 font-extrabold"
+            >
+              {{ certification }}
+            </div>
           </div>
         </TopPageContent>
       </div>

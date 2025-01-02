@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import TopPageContent from "./components/TopPageContent.vue";
 import WorkTile from "./components/WorkTile.vue";
-import PrimaryButton from "./components/PrimaryButton.vue";
 import type { Work } from "./types/Work.ts";
-import type { Achivement } from "./types/Achivement.ts";
-import AchivementTimeline from "./components/AchivementTimeline.vue";
+import AchievementTimeline from "./components/AchievementTimeline.vue";
 import XIcon from "./components/Icons/XIcon.vue";
 import GithubIcon from "./components/Icons/GithubIcon.vue";
 import AtcoderIcon from "./components/Icons/AtcoderIcon.vue";
-import { ref } from "vue";
 
 const works: Work[] = [
   {
@@ -107,7 +104,7 @@ const certifications: string[] = [
           <!--          </div>-->
         </TopPageContent>
         <TopPageContent title="Achievements" subtitle="実績">
-          <AchivementTimeline />
+          <AchievementTimeline />
         </TopPageContent>
         <TopPageContent title="Activities" subtitle="その他の活動">
           <div class="flex flex-wrap gap-4">

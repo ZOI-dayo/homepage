@@ -1,4 +1,4 @@
-export type Achivement = {
+export type Achievement = {
   // priority
   // 0  = ?
   // 1  = ?

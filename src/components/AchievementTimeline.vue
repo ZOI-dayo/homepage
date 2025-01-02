@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Achivement } from "../types/Achivement.ts";
+import type { Achievement } from "../types/Achievement.ts";
 import TrapIcon from "./Icons/TrapIcon.vue";
 import XIcon from "./Icons/XIcon.vue";
 import GithubIcon from "./Icons/GithubIcon.vue";
@@ -27,7 +27,7 @@ const colorMap = [
   "bg-text-primary", // 10
 ];
 
-const achivements: Achivement[] = [
+const achievements: Achievement[] = [
   {
     priority: 5,
     date: "2024.12.08",
@@ -111,14 +111,14 @@ const achivements: Achivement[] = [
   </div>
   <div class="relative w-full">
     <div
-      v-for="achivement in viewAll
-        ? achivements
-        : achivements.filter((e) => e.priority >= 5).slice(0, 5)"
-      :key="achivement.title"
+      v-for="achievement in viewAll
+        ? achievements
+        : achievements.filter((e) => e.priority >= 5).slice(0, 5)"
+      :key="achievement.title"
       class="relative flex h-16 items-center rounded-xl transition duration-200 ease-in-out hover:bg-primary/50"
     >
       <div class="w-40 text-right text-xl font-extrabold text-text-secondary">
-        {{ achivement.date }}
+        {{ achievement.date }}
       </div>
       <div
         class="absolute left-[calc(12rem-1px)] top-0 h-4 border-l-2 border-text-secondary"
@@ -129,32 +129,35 @@ const achivements: Achivement[] = [
         <div
           class="flex size-6 items-center justify-center rounded-full bg-background"
         >
-          <div class="size-2 rounded-full" :class="colorMap[achivement.priority]"></div>
+          <div
+            class="size-2 rounded-full"
+            :class="colorMap[achievement.priority]"
+          ></div>
         </div>
       </div>
       <div
         class="absolute bottom-0 left-[calc(12rem-1px)] h-4 border-l-2 border-text-secondary"
       />
-      <div class="text-xl font-black">{{ achivement.title }}</div>
+      <div class="text-xl font-black">{{ achievement.title }}</div>
       <div class="ml-8 flex gap-3">
         <a
-          v-if="achivement.links?.trap != undefined"
-          :href="achivement.links.trap"
+          v-if="achievement.links?.trap != undefined"
+          :href="achievement.links.trap"
         >
           <TrapIcon class="size-6" />
         </a>
         <a
-          v-if="achivement.links?.github != undefined"
-          :href="achivement.links.github"
+          v-if="achievement.links?.github != undefined"
+          :href="achievement.links.github"
         >
           <GithubIcon class="size-6" />
         </a>
-        <a v-if="achivement.links?.x != undefined" :href="achivement.links.x">
+        <a v-if="achievement.links?.x != undefined" :href="achievement.links.x">
           <XIcon class="size-6" />
         </a>
         <a
-          v-if="achivement.links?.atcoder != undefined"
-          :href="achivement.links.atcoder"
+          v-if="achievement.links?.atcoder != undefined"
+          :href="achievement.links.atcoder"
         >
           <AtcoderIcon class="size-6" />
         </a>

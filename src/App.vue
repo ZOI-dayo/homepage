@@ -13,24 +13,28 @@ const works: Work[] = [
     role: "Infra Team Leader & Frontend Team",
     description:
       "traP内で開発中のオンラインジャッジサービス\n2025年春 v0リリース予定",
+    technologies: ["vuejs", "tailwindcss", "amazonwebservice", "kubernetes"],
   },
   {
     title: "Antonym",
     role: "Programmer Team",
     description:
       "「プレイする映画」を提供するミステリーアドベンチャー\n2025年夏 テストプレイ版リリース予定",
+    technologies: ["unity", "csharp"],
   },
   {
     title: "myPOMO",
-    role: "Frontend Team",
+    role: "App Frontend Team",
     description:
       "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年春 正式リリース予定",
+    technologies: ["flutter", "dart"],
   },
   {
     title: "traPortfolio",
     role: "Backend Team",
     description: "traP部員のためのポートフォリオサービス\n2024年7月 リリース",
     image: "/traPortfolio_thumbnail.svg",
+    technologies: ["go", "mysql"],
   },
 ];
 
@@ -87,13 +91,13 @@ const certifications: string[] = [
       </div>
     </div>
     <div class="flex w-screen flex-col items-center py-8">
-      <div class="w-[75rem]">
+      <div class="w-[72rem]">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
-            <!-- TODO: 年齢とか-->
-            東京科学大学 学部1年 (24B) / traP<br />
-            <br />
-            中高でWebフロントエンドと競技プログラミングに触れ、大学に入ってからWebバックエンドにも挑戦しています。
+            東京科学大学 学部1年 (24B) / traP<br><br>
+            中高でWebフロントエンドと競技プログラミング(AtCoder)に触れ、大学に入ってからWebバックエンドにも挑戦しています。<br><br>
+            競技プログラミングで大量に書いたので最も慣れている言語はC++ですが、HTML/CSS、JavaScript、Dart(Flutter)などいろいろな言語を使っています。最近はGoやC#、SQLにも興味があります。
+
           </p>
         </TopPageContent>
         <TopPageContent title="Works" subtitle="作品">
@@ -129,6 +133,11 @@ const certifications: string[] = [
             </div>
           </div>
         </TopPageContent>
+      </div>
+    </div>
+    <div class="flex w-screen flex-col items-center py-8">
+      <div class="w-[72rem]">
+        &copy; 2025 ZOI_dayo
       </div>
     </div>
   </div>

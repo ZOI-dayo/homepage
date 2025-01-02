@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex items-center justify-center bg-text-secondary/50">
-    <span class="text-2xl font-extrabold text-text-primary/50">No Image</span>
+  <div class="flex items-center justify-center bg-text-secondary">
+    <span class="text-2xl font-extrabold text-primary/75">No Image</span>
   </div>
 </template>
 

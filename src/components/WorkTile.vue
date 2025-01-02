@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Work } from "../types/Work.ts";
 import NoImage from "./NoImage.vue";
+import DeviconIcon from "./DeviconIcon.vue";
 
 defineProps<{
   work: Work;
@@ -8,10 +9,12 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex h-48 gap-4 rounded-lg border-2 border-secondary bg-primary">
+  <div
+    class="relative flex h-48 gap-4 rounded-lg border-2 border-secondary bg-primary"
+  >
     <div
       v-if="work.image != undefined"
-      class="flex aspect-square h-full items-center justify-center rounded-l-md bg-white p-4"
+      class="relative flex aspect-square h-full items-center justify-center rounded-l-md bg-white p-4"
     >
       <img :src="work.image" />
     </div>
@@ -19,6 +22,16 @@ defineProps<{
       v-if="work.image == undefined"
       class="aspect-square h-full rounded-l-md"
     />
+    <div class="absolute aspect-square h-full">
+      <div class="absolute flex size-full items-end justify-end p-2">
+        <DeviconIcon
+          v-for="technology in work.technologies"
+          :key="technology"
+          :icon="technology"
+          class="size-6 fill-primary pl-2 drop-shadow-md"
+        />
+      </div>
+    </div>
     <div class="py-8">
       <span class="block text-xs text-text-secondary text-opacity-50">{{
         work.role

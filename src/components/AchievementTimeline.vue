@@ -111,9 +111,24 @@ const achievements: Achievement[] = [
     title: "パソコン甲子園2022 モバイル部門 ベストデザイン賞・協賛企業賞",
   },
   {
+    priority: 7,
+    date: "2022.02.22",
+    title: "第24回全国中学高校Webコンテスト 高校生の部金賞 『右ポケットの中の資源を求めて』",
+  },
+  {
+    priority: 3,
+    date: "2021.12.24",
+    title: "2級ウェブデザイン技能検定 合格",
+  },
+  {
+    priority: 3,
+    date: "2021.04.01",
+    title: "甲陽学院高校 入学",
+  },
+  {
     priority: 3,
     date: "2018.04.01",
-    title: "甲陽学院 入学",
+    title: "甲陽学院中学校 入学",
   },
   {
     priority: 1,
@@ -184,7 +199,7 @@ const achievements: Achievement[] = [
       </div>
     </div>
   </div>
-  <div class="relative h-8 w-full">
+  <div class="relative h-8 w-full" v-if="!viewAll">
     <div
       class="absolute left-[calc(12rem-1px)] h-full border-l-2 border-dashed border-text-secondary"
     />

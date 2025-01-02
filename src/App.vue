@@ -15,7 +15,7 @@ const works: Work[] = [
       "traP内で開発中のオンラインジャッジサービス\n2025年春 v0リリース予定",
   },
   {
-    title: "Antonym (仮)",
+    title: "Antonym",
     role: "Programmer Team",
     description:
       "「プレイする映画」を提供するミステリーアドベンチャー\n2025年夏 テストプレイ版リリース予定",
@@ -30,6 +30,7 @@ const works: Work[] = [
     title: "traPortfolio",
     role: "Backend Team",
     description: "traP部員のためのポートフォリオサービス\n2024年7月 リリース",
+    image: "/traPortfolio_thumbnail.svg",
   },
 ];
 

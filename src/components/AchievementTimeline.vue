@@ -29,7 +29,7 @@ const colorMap = [
 
 const achievements: Achievement[] = [
   {
-    priority: 5,
+    priority: 7,
     date: "2024.12.08",
     title: "ISUCON14 全体115位 / 学生10位",
   },
@@ -54,14 +54,11 @@ const achievements: Achievement[] = [
     priority: 3,
     date: "2024.07.05",
     title: "ICPC2024国内予選 148位 / 部内18位",
-    links: {
-      trap: "https://trap.jp/post/2286/",
-    },
   },
   {
     priority: 8,
     date: "2024.06.16",
-    title: "traP春ハッカソン 最優秀賞『発火村』",
+    title: "traP春ハッカソン 最優秀賞 『発火村』",
     links: {
       trap: "https://trap.jp/post/2255/",
       github: "https://github.com/traP-jp/hakka-mura",
@@ -73,6 +70,19 @@ const achievements: Achievement[] = [
     title: "CPCTF2024 10位・新入生内1位",
     links: {
       trap: "https://trap.jp/post/2224/",
+    },
+  },
+  {
+    priority: 3,
+    date: "2024.04.01",
+    title: "東京工業大学 情報理工学院 入学",
+  },
+  {
+    priority: 4,
+    date: "2023.12.23",
+    title: "AtCoder Junior League 2023 高3内12位",
+    links: {
+      atcoder: "https://img.atcoder.jp/ajl2023/output_personal_grade6.html",
     },
   },
   {
@@ -93,12 +103,22 @@ const achievements: Achievement[] = [
   {
     priority: 3,
     date: "2022.12.11",
-    title: "JOI2022/2023 二次予選出場",
+    title: "日本情報オリンピック 2022/2023 二次予選出場",
   },
   {
     priority: 7,
     date: "2022.11.06",
     title: "パソコン甲子園2022 モバイル部門 ベストデザイン賞・協賛企業賞",
+  },
+  {
+    priority: 3,
+    date: "2018.04.01",
+    title: "甲陽学院 入学",
+  },
+  {
+    priority: 1,
+    date: "2005.08.15",
+    title: "生誕",
   },
 ];
 </script>
@@ -170,9 +190,9 @@ const achievements: Achievement[] = [
     />
   </div>
   <div class="mt-8 place-items-center">
-    <PrimaryButton @click="toggleViewAll">{{
-      viewAll ? "Hide" : "View All"
-    }}</PrimaryButton>
+    <PrimaryButton @click="toggleViewAll"
+      >{{ viewAll ? "Collapse" : "View All" }}
+    </PrimaryButton>
   </div>
 </template>
 

@@ -9,6 +9,7 @@ export default {
       accent: "#C35E50",
       "text-primary": "#F5EFE7",
       "text-secondary": "#D8C4B6",
+      white: "#FFFFFF",
     },
     fontFamily: {
       primary: ["Open Sans", "Noto Sans JP", "sans-serif"],

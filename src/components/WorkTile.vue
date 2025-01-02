@@ -9,11 +9,12 @@ defineProps<{
 
 <template>
   <div class="flex h-48 gap-4 rounded-lg border-2 border-secondary bg-primary">
-    <img
+    <div
       v-if="work.image != undefined"
-      src="/zoi_icon.png"
-      class="aspect-square h-full rounded-l-md"
-    />
+      class="flex aspect-square h-full items-center justify-center rounded-l-md bg-white p-4"
+    >
+      <img :src="work.image" />
+    </div>
     <NoImage
       v-if="work.image == undefined"
       class="aspect-square h-full rounded-l-md"

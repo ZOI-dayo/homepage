@@ -60,31 +60,33 @@ const certifications: string[] = [
       <div
         class="flex h-[40rem] w-[64rem] flex-col items-center justify-center gap-20 border-x-2 border-text-secondary"
       >
-        <img
-          src="/zoi_icon.png"
-          width="320"
-          height="320"
-          class="rounded-[64px]"
-          alt="logo"
-        />
+        <div class="flex size-80 items-center justify-center overflow-visible">
+          <img
+            src="/zoi_icon.png"
+            width="320"
+            height="320"
+            class="size-80 max-w-none rounded-[64px] transition-all duration-200 ease-in-out hover:size-96"
+            alt="logo"
+          />
+        </div>
         <span class="text-6xl font-extrabold">ZOI_dayo</span>
         <div class="inline-flex gap-24">
           <a
-            class="flex items-center justify-center gap-4"
+            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
             href="https://x.com/ZOI_dayo"
           >
             <XIcon class="inline size-8" />
             <span class="font-mono text-2xl">@ZOI_dayo</span>
           </a>
           <a
-            class="flex items-center justify-center gap-4"
+            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
             href="https://atcoder.jp/users/ZOIZOI"
           >
             <AtcoderIcon class="inline size-8" />
             <span class="font-mono text-2xl">ZOIZOI</span>
           </a>
           <a
-            class="flex items-center justify-center gap-4"
+            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
             href="https://github.com/ZOI-dayo"
           >
             <GithubIcon class="inline size-8" />
@@ -137,8 +139,10 @@ const certifications: string[] = [
         </TopPageContent>
       </div>
     </div>
-    <div class="flex w-screen flex-col items-center py-8">
-      <div class="w-[72rem]">&copy; 2025 ZOI_dayo</div>
+    <div
+      class="w-screen items-center border-t border-primary/50 px-8 py-4 text-right text-text-primary/50"
+    >
+      &copy; 2025 ZOI_dayo
     </div>
   </div>
 </template>

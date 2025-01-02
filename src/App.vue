@@ -8,6 +8,7 @@ import AchivementTimeline from "./components/AchivementTimeline.vue";
 import XIcon from "./components/Icons/XIcon.vue";
 import GithubIcon from "./components/Icons/GithubIcon.vue";
 import AtcoderIcon from "./components/Icons/AtcoderIcon.vue";
+import { ref } from "vue";
 
 const works: Work[] = [
   {
@@ -23,7 +24,7 @@ const works: Work[] = [
       "「プレイする映画」を提供するミステリーアドベンチャー\n2025年夏 テストプレイ版リリース予定",
   },
   {
-    title: "(Secret)",
+    title: "myPOMO",
     role: "Frontend Team",
     description:
       "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年春 正式リリース予定",
@@ -32,71 +33,6 @@ const works: Work[] = [
     title: "traPortfolio",
     role: "Backend Team",
     description: "traP部員のためのポートフォリオサービス\n2024年7月 リリース",
-  },
-];
-
-const achivements: Achivement[] = [
-  {
-    date: "2024.12.08",
-    title: "ISUCON14 出場 (全体115位 / 学生10位)",
-  },
-  {
-    date: "2024.10.26",
-    title: "AtCoder 青色到達",
-    links: {
-      atcoder: "https://atcoder.jp/users/ZOIZOI/history/share/abc377",
-      x: "https://x.com/ZOI_dayo/status/1850178630565183963",
-    },
-  },
-  {
-    date: "2024.07.17",
-    title: "traP機械学習講習会コンペ 出場 (学内2位)",
-    links: {
-      trap: "https://trap.jp/post/2286/",
-    },
-  },
-  {
-    date: "2024.07.05",
-    title: "ICPC2024国内予選 出場 (148位 / 部内18位)",
-    links: {
-      trap: "https://trap.jp/post/2286/",
-    },
-  },
-  {
-    date: "2024.06.16",
-    title: "traP春ハッカソン 出場 『発火村』 (最優秀賞)",
-    links: {
-      trap: "https://trap.jp/post/2255/",
-      github: "https://github.com/traP-jp/hakka-mura",
-    },
-  },
-  {
-    date: "2024.04.21",
-    title: "CPCTF2024出場 (10位・新入生内1位)",
-    links: {
-      trap: "https://trap.jp/post/2224/",
-    },
-  },
-  {
-    date: "2023.11.11",
-    title: "パソコン甲子園2023 プログラミング部門 本戦出場",
-  },
-  {
-    date: "2023.08.12",
-    title: "AtCoder 水色到達",
-  },
-  {
-    date: "2023.02.19",
-    title: "AtCoder 緑色到達",
-  },
-  {
-    date: "2022.12.11",
-    title: "JOI2022/2023 二次予選出場",
-  },
-  {
-    date: "2022.11.06",
-    title:
-      "パソコン甲子園2022 モバイル部門 本戦出場 (ベストデザイン賞・協賛企業賞)",
   },
 ];
 
@@ -156,6 +92,7 @@ const certifications: string[] = [
       <div class="w-[75rem]">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
+            <!-- TODO: 年齢とか-->
             東京科学大学 学部1年 (24B) / traP<br />
             <br />
             中高でWebフロントエンドと競技プログラミングに触れ、大学に入ってからWebバックエンドにも挑戦しています。
@@ -165,15 +102,12 @@ const certifications: string[] = [
           <div class="grid w-full grid-cols-2 gap-8">
             <WorkTile v-for="work in works" :key="work.title" :work="work" />
           </div>
-          <div class="mt-8 place-items-center">
-            <PrimaryButton>View all</PrimaryButton>
-          </div>
+          <!--          <div class="mt-8 place-items-center">-->
+          <!--            <PrimaryButton>View all</PrimaryButton>-->
+          <!--          </div>-->
         </TopPageContent>
         <TopPageContent title="Achievements" subtitle="実績">
-          <AchivementTimeline :achivements="achivements" />
-          <div class="mt-8 place-items-center">
-            <PrimaryButton>View all</PrimaryButton>
-          </div>
+          <AchivementTimeline />
         </TopPageContent>
         <TopPageContent title="Activities" subtitle="その他の活動">
           <div class="flex flex-wrap gap-4">
@@ -201,5 +135,3 @@ const certifications: string[] = [
     </div>
   </div>
 </template>
-
-<style scoped></style>

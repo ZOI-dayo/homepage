@@ -14,6 +14,7 @@ const works: Work[] = [
     description:
       "traP内で開発中のオンラインジャッジサービス\n2025年春 v0リリース予定",
     technologies: ["vuejs", "tailwindcss", "amazonwebservice", "kubernetes"],
+    developing: true,
   },
   {
     title: "Antonym",
@@ -21,6 +22,7 @@ const works: Work[] = [
     description:
       "「プレイする映画」を提供するミステリーアドベンチャー\n2025年夏 テストプレイ版リリース予定",
     technologies: ["unity", "csharp"],
+    developing: true,
   },
   {
     title: "myPOMO",
@@ -28,6 +30,7 @@ const works: Work[] = [
     description:
       "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年春 正式リリース予定",
     technologies: ["flutter", "dart"],
+    developing: true,
   },
   {
     title: "traPortfolio",
@@ -94,10 +97,9 @@ const certifications: string[] = [
       <div class="w-[72rem]">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
-            東京科学大学 学部1年 (24B) / traP<br><br>
-            中高でWebフロントエンドと競技プログラミング(AtCoder)に触れ、大学に入ってからWebバックエンドにも挑戦しています。<br><br>
+            東京科学大学 学部1年 (24B) / traP<br /><br />
+            中高でWebフロントエンドと競技プログラミング(AtCoder)に触れ、大学に入ってからWebバックエンドにも挑戦しています。<br /><br />
             競技プログラミングで大量に書いたので最も慣れている言語はC++ですが、HTML/CSS、JavaScript、Dart(Flutter)などいろいろな言語を使っています。最近はGoやC#、SQLにも興味があります。
-
           </p>
         </TopPageContent>
         <TopPageContent title="Works" subtitle="作品">
@@ -136,9 +138,7 @@ const certifications: string[] = [
       </div>
     </div>
     <div class="flex w-screen flex-col items-center py-8">
-      <div class="w-[72rem]">
-        &copy; 2025 ZOI_dayo
-      </div>
+      <div class="w-[72rem]">&copy; 2025 ZOI_dayo</div>
     </div>
   </div>
 </template>

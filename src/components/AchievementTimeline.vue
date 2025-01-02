@@ -113,7 +113,8 @@ const achievements: Achievement[] = [
   {
     priority: 7,
     date: "2022.02.22",
-    title: "第24回全国中学高校Webコンテスト 高校生の部金賞 『右ポケットの中の資源を求めて』",
+    title:
+      "第24回全国中学高校Webコンテスト 高校生の部金賞 『右ポケットの中の資源を求めて』",
   },
   {
     priority: 3,
@@ -199,7 +200,7 @@ const achievements: Achievement[] = [
       </div>
     </div>
   </div>
-  <div class="relative h-8 w-full" v-if="!viewAll">
+  <div v-if="!viewAll" class="relative h-8 w-full">
     <div
       class="absolute left-[calc(12rem-1px)] h-full border-l-2 border-dashed border-text-secondary"
     />

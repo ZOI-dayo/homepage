@@ -41,6 +41,21 @@ defineProps<{
         {{ work.description }}
       </p>
     </div>
+    <div v-if="work.developing" class="absolute left-[-2px] top-[-2px]">
+      <svg
+        class="size-16 fill-accent"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          :d="`M 64 0 L 0 64 L 0 ${64 - Math.sqrt(2) * 16} L ${64 - Math.sqrt(2) * 16} 0 Z`"
+        />
+      </svg>
+      <span
+        class="absolute -left-1.5 top-[18px] block h-4 w-16 -rotate-45 text-center text-[10px] font-extrabold"
+        >developing</span
+      >
+    </div>
   </div>
 </template>
 

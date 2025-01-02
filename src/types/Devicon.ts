@@ -8,4 +8,4 @@ export type Devicon =
   | "flutter"
   | "go"
   | "mysql"
-    | "dart";
+  | "dart";

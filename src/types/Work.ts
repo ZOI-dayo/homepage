@@ -6,4 +6,5 @@ export type Work = {
   description: string;
   image?: string;
   technologies: Devicon[];
+  developing?: true;
 };

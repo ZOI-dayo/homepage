@@ -15,6 +15,11 @@ export default {
       primary: ["Open Sans", "Noto Sans JP", "sans-serif"],
       mono: ["JetBrains Mono", "monospace"],
     },
+    extend: {
+      spacing: {
+        4.5: "1.125rem",
+      },
+    },
   },
   plugins: [],
 };

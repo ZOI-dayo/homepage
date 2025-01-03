@@ -53,20 +53,24 @@ const certifications: string[] = [
 </script>
 
 <template>
-  <div class="min-h-screen w-full bg-background font-primary text-text-primary">
+  <div
+    class="min-h-screen w-full max-w-full bg-background font-primary text-text-primary"
+  >
     <div class="flex h-screen w-full items-center justify-center">
       <div
-        class="flex h-[40rem] w-[64rem] flex-col items-center justify-center gap-20 border-x-2 border-text-secondary"
+        class="flex h-[40rem] w-80 flex-col items-center justify-center gap-20 border-x-2 border-text-secondary xl:w-[64rem]"
       >
-        <div class="flex size-80 items-center justify-center overflow-visible">
+        <div
+          class="flex size-52 items-center justify-center overflow-visible lg:size-80"
+        >
           <img
             src="/zoi_icon.png"
-            class="size-80 max-w-none rounded-[20%] transition-all duration-200 ease-in-out hover:size-96"
+            class="size-52 max-w-none rounded-[20%] transition-all duration-200 ease-in-out lg:size-80 lg:hover:size-96"
             alt="logo"
           />
         </div>
-        <span class="text-6xl font-extrabold">ZOI_dayo</span>
-        <div class="inline-flex gap-24">
+        <span class="text-4xl font-extrabold lg:text-6xl">ZOI_dayo</span>
+        <div class="inline-flex flex-col gap-4 lg:flex-row lg:gap-24">
           <a
             class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
             href="https://x.com/ZOI_dayo"
@@ -92,7 +96,7 @@ const certifications: string[] = [
       </div>
     </div>
     <div class="flex w-full flex-col items-center py-8">
-      <div class="w-[72rem]">
+      <div class="max-w-full px-8 xl:w-[72rem] xl:p-0">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
             東京科学大学 学部1年 (24B) / traP<br /><br />
@@ -101,7 +105,9 @@ const certifications: string[] = [
           </p>
         </TopPageContent>
         <TopPageContent title="Works" subtitle="作品">
-          <div class="grid w-full grid-cols-2 gap-8">
+          <div
+            class="grid w-full grid-cols-1 justify-items-center gap-8 xl:grid-cols-2"
+          >
             <WorkTile v-for="work in works" :key="work.title" :work="work" />
           </div>
           <!--          <div class="mt-8 place-items-center">-->

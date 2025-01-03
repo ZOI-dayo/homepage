@@ -142,7 +142,7 @@ const achievements: Achievement[] = [
 <template>
   <div class="relative h-4 w-full">
     <div
-      class="absolute left-[calc(12rem-1px)] h-full border-l-2 border-text-secondary"
+      class="absolute left-[calc(6rem-1px)] h-full border-l-2 border-text-secondary xl:left-[calc(13rem-1px)]"
     />
   </div>
   <div class="relative w-full">
@@ -151,19 +151,21 @@ const achievements: Achievement[] = [
         ? achievements
         : achievements.filter((e) => e.priority >= 5).slice(0, 5)"
       :key="achievement.title"
-      class="relative flex h-16 items-center rounded-xl transition duration-200 ease-in-out hover:bg-primary/50"
+      class="relative flex h-16 items-center rounded-xl px-4 transition duration-200 ease-in-out hover:bg-primary/50"
     >
-      <div class="w-40 text-right text-xl font-extrabold text-text-secondary">
+      <div
+        class="w-16 shrink-0 text-right text-xs font-extrabold text-text-secondary xl:w-40 xl:text-xl"
+      >
         {{ achievement.date }}
       </div>
       <div
-        class="absolute left-[calc(12rem-1px)] top-0 h-4 border-l-2 border-text-secondary"
+        class="absolute left-[calc(6rem-1px)] top-0 h-6 shrink-0 border-l-2 border-text-secondary xl:left-[calc(13rem-1px)] xl:h-4"
       />
       <div
-        class="m-4 flex size-8 items-center justify-center rounded-full bg-text-secondary"
+        class="m-2 flex size-4 shrink-0 items-center justify-center rounded-full bg-text-secondary xl:m-4 xl:size-8"
       >
         <div
-          class="flex size-6 items-center justify-center rounded-full bg-background"
+          class="flex size-3 items-center justify-center rounded-full bg-background xl:size-6"
         >
           <div
             class="size-2 rounded-full"
@@ -172,37 +174,37 @@ const achievements: Achievement[] = [
         </div>
       </div>
       <div
-        class="absolute bottom-0 left-[calc(12rem-1px)] h-4 border-l-2 border-text-secondary"
+        class="absolute bottom-0 left-[calc(6rem-1px)] h-6 shrink-0 border-l-2 border-text-secondary xl:left-[calc(13rem-1px)] xl:h-4"
       />
-      <div class="text-xl font-black">{{ achievement.title }}</div>
-      <div class="ml-8 flex gap-3">
+      <div class="truncate font-black xl:text-xl">{{ achievement.title }}</div>
+      <div class="ml-4 flex shrink-0 gap-3 xl:ml-8">
         <a
           v-if="achievement.links?.trap != undefined"
           :href="achievement.links.trap"
         >
-          <TrapIcon class="size-6" />
+          <TrapIcon class="size-4 xl:size-6" />
         </a>
         <a
           v-if="achievement.links?.github != undefined"
           :href="achievement.links.github"
         >
-          <GithubIcon class="size-6" />
+          <GithubIcon class="size-4 xl:size-6" />
         </a>
         <a v-if="achievement.links?.x != undefined" :href="achievement.links.x">
-          <XIcon class="size-6" />
+          <XIcon class="size-4 xl:size-6" />
         </a>
         <a
           v-if="achievement.links?.atcoder != undefined"
           :href="achievement.links.atcoder"
         >
-          <AtcoderIcon class="size-6" />
+          <AtcoderIcon class="size-4 xl:size-6" />
         </a>
       </div>
     </div>
   </div>
   <div v-if="!viewAll" class="relative h-8 w-full">
     <div
-      class="absolute left-[calc(12rem-1px)] h-full border-l-2 border-dashed border-text-secondary"
+      class="absolute left-[calc(6rem-1px)] h-full border-l-2 border-dashed border-text-secondary xl:left-[calc(13rem-1px)]"
     />
   </div>
   <div class="mt-8 place-items-center">

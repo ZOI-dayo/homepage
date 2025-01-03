@@ -10,19 +10,19 @@ defineProps<{
 
 <template>
   <div
-    class="relative flex h-48 gap-4 rounded-lg border-2 border-secondary bg-primary"
+    class="relative flex w-3/4 flex-col gap-4 rounded-lg border-2 border-secondary bg-primary xl:h-48 xl:w-full xl:flex-row"
   >
     <div
       v-if="work.image != undefined"
-      class="relative flex aspect-square h-full items-center justify-center rounded-l-md bg-white p-4"
+      class="relative flex aspect-square h-full items-center justify-center rounded-t-md bg-white p-4 xl:rounded-l-md xl:rounded-tr-none"
     >
       <img :src="work.image" />
     </div>
     <NoImage
       v-if="work.image == undefined"
-      class="aspect-square h-full rounded-l-md"
+      class="aspect-square h-full xl:rounded-l-md"
     />
-    <div class="absolute aspect-square h-full">
+    <div class="absolute aspect-square w-full xl:h-full">
       <div class="absolute flex size-full items-end justify-end p-2">
         <DeviconIcon
           v-for="technology in work.technologies"
@@ -32,11 +32,13 @@ defineProps<{
         />
       </div>
     </div>
-    <div class="py-8">
+    <div class="ml-2 py-4 xl:ml-0 xl:py-8">
       <span class="block text-xs text-text-secondary text-opacity-50">{{
         work.role
       }}</span>
-      <span class="mt-1 block text-4xl font-extrabold">{{ work.title }}</span>
+      <span class="mt-1 block text-2xl font-extrabold xl:text-4xl">{{
+        work.title
+      }}</span>
       <p class="mt-4 whitespace-pre-wrap text-xs">
         {{ work.description }}
       </p>

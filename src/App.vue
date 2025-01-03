@@ -61,32 +61,32 @@ const certifications: string[] = [
         class="flex h-[40rem] w-80 flex-col items-center justify-center gap-20 border-x-2 border-text-secondary xl:w-[64rem]"
       >
         <div
-          class="flex size-52 items-center justify-center overflow-visible lg:size-80"
+          class="flex size-52 items-center justify-center overflow-visible xl:size-80"
         >
           <img
             src="/zoi_icon.png"
-            class="size-52 max-w-none rounded-[20%] transition-all duration-200 ease-in-out lg:size-80 lg:hover:size-96"
+            class="size-52 max-w-none rounded-[20%] transition-all duration-200 ease-in-out xl:size-80 xl:hover:size-96"
             alt="logo"
           />
         </div>
-        <span class="text-4xl font-extrabold lg:text-6xl">ZOI_dayo</span>
-        <div class="inline-flex flex-col gap-4 lg:flex-row lg:gap-24">
+        <span class="text-4xl font-extrabold xl:text-6xl">ZOI_dayo</span>
+        <div class="inline-flex flex-col gap-4 xl:flex-row xl:gap-24">
           <a
-            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
+            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out xl:hover:-translate-y-1"
             href="https://x.com/ZOI_dayo"
           >
             <XIcon class="inline size-8" />
             <span class="font-mono text-2xl">@ZOI_dayo</span>
           </a>
           <a
-            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
+            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out xl:hover:-translate-y-1"
             href="https://atcoder.jp/users/ZOIZOI"
           >
             <AtcoderIcon class="inline size-8" />
             <span class="font-mono text-2xl">ZOIZOI</span>
           </a>
           <a
-            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out hover:-translate-y-1"
+            class="flex items-center justify-center gap-4 transition duration-200 ease-in-out xl:hover:-translate-y-1"
             href="https://github.com/ZOI-dayo"
           >
             <GithubIcon class="inline size-8" />

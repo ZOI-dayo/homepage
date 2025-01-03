@@ -176,7 +176,9 @@ const achievements: Achievement[] = [
       <div
         class="absolute bottom-0 left-[calc(6rem-1px)] h-6 shrink-0 border-l-2 border-text-secondary xl:left-[calc(13rem-1px)] xl:h-4"
       />
-      <div class="truncate font-black xl:text-xl">{{ achievement.title }}</div>
+      <div class="overflow-scroll whitespace-nowrap font-black xl:text-xl">
+        {{ achievement.title }}
+      </div>
       <div class="ml-4 flex shrink-0 gap-3 xl:ml-8">
         <a
           v-if="achievement.links?.trap != undefined"

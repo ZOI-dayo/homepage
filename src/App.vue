@@ -63,9 +63,7 @@ const certifications: string[] = [
         <div class="flex size-80 items-center justify-center overflow-visible">
           <img
             src="/zoi_icon.png"
-            width="320"
-            height="320"
-            class="size-80 max-w-none rounded-[64px] transition-all duration-200 ease-in-out hover:size-96"
+            class="size-80 max-w-none rounded-[20%] transition-all duration-200 ease-in-out hover:size-96"
             alt="logo"
           />
         </div>

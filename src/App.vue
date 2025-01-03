@@ -53,10 +53,8 @@ const certifications: string[] = [
 </script>
 
 <template>
-  <div
-    class="min-h-screen w-screen bg-background font-primary text-text-primary"
-  >
-    <div class="flex h-screen w-screen items-center justify-center">
+  <div class="min-h-screen w-full bg-background font-primary text-text-primary">
+    <div class="flex h-screen w-full items-center justify-center">
       <div
         class="flex h-[40rem] w-[64rem] flex-col items-center justify-center gap-20 border-x-2 border-text-secondary"
       >
@@ -93,7 +91,7 @@ const certifications: string[] = [
         </div>
       </div>
     </div>
-    <div class="flex w-screen flex-col items-center py-8">
+    <div class="flex w-full flex-col items-center py-8">
       <div class="w-[72rem]">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
@@ -138,7 +136,7 @@ const certifications: string[] = [
       </div>
     </div>
     <div
-      class="w-screen items-center border-t border-primary/50 px-8 py-4 text-right text-text-primary/50"
+      class="w-full items-center border-t border-primary/50 px-8 py-4 text-right text-text-primary/50"
     >
       &copy; 2025 ZOI_dayo
     </div>

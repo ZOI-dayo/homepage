@@ -37,13 +37,26 @@ const works: Work[] = [
     role: "Backend Team",
     description: "traP部員のためのポートフォリオサービス\n2024年7月 リリース",
     image: "/traPortfolio_thumbnail.svg",
+    padding: true,
     technologies: ["go", "mysql"],
+  },
+  {
+    title: "Homepage",
+    role: "Developer",
+    description: "本Webページ\n2025年1月 リリース",
+    image: "/zoi_icon.png",
+    dark: true,
+    technologies: ["vuejs", "tailwindcss"],
   },
 ];
 
 const activities: string[] = [
   "traP 代表補佐",
   // "GAME^3 Webフロント担当"
+  "traP 新歓 特設ページ担当",
+  "traP 新歓 ガイダンス動画担当",
+  "traP GitHub Admin",
+  "CPCTF 運営",
 ];
 
 const certifications: string[] = [

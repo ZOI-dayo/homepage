@@ -5,6 +5,8 @@ export type Work = {
   role: string;
   description: string;
   image?: string;
+  padding?: boolean;
+  dark?: boolean;
   technologies: Devicon[];
   developing?: true;
 };

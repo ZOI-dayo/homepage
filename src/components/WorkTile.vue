@@ -14,21 +14,31 @@ defineProps<{
   >
     <div
       v-if="work.image != undefined"
-      class="relative flex aspect-square h-full items-center justify-center rounded-t-md bg-white p-4 xl:rounded-l-md xl:rounded-tr-none"
+      class="relative flex aspect-square h-full items-center justify-center rounded-t-md bg-white xl:rounded-l-md xl:rounded-tr-none"
+      :class="{ 'p-4': work.padding }"
     >
-      <img :src="work.image" />
+      <img
+        :src="work.image"
+        :class="{
+          'rounded-t-md xl:rounded-l-md xl:rounded-tr-none': !work.padding,
+        }"
+      />
     </div>
     <NoImage
       v-if="work.image == undefined"
       class="aspect-square h-full xl:rounded-l-md"
     />
-    <div class="absolute aspect-square w-full xl:h-full">
+    <div class="absolute aspect-square w-full xl:h-full xl:w-auto">
       <div class="absolute flex size-full items-end justify-end p-2">
         <DeviconIcon
           v-for="technology in work.technologies"
           :key="technology"
           :icon="technology"
-          class="size-6 fill-primary pl-2 drop-shadow-md"
+          class="size-6 pl-2 drop-shadow-md"
+          :class="{
+            'fill-primary': !work.dark,
+            'fill-text-secondary': work.dark,
+          }"
         />
       </div>
     </div>

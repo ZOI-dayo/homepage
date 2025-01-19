@@ -29,6 +29,20 @@ const colorMap = [
 
 const achievements: Achievement[] = [
   {
+    priority: 5,
+    date: "2025.01.19",
+    title: "ABC389 2400perf (117位)",
+    links: {
+      atcoder: "https://atcoder.jp/users/ZOIZOI/history/share/abc389",
+      x: "https://x.com/ZOI_dayo/status/1880619191268679698",
+    },
+  },
+  {
+    priority: 0,
+    date: "2025.01.04",
+    title: "本Webページ 公開",
+  },
+  {
     priority: 7,
     date: "2024.12.08",
     title: "ISUCON14 全体115位 / 学生10位",

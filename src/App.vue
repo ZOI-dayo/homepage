@@ -60,7 +60,7 @@ const activities: string[] = [
 ];
 
 const certifications: string[] = [
-  "AtCoder 2級 (Algo青)",
+  "AtCoder 2級 (Algo青 / Heu緑)",
   "2級ウェブデザイン技能士",
 ];
 </script>

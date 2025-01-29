@@ -53,8 +53,10 @@ const works: Work[] = [
 const activities: string[] = [
   "traP 代表補佐",
   // "GAME^3 Webフロント担当"
-  "traP 新歓 特設ページ担当",
-  "traP 新歓 ガイダンス動画担当",
+  "traP 2025新歓 特設ページ担当",
+  "traP 2025新歓 ガイダンス動画担当",
+  "traP 2025新歓 ハッキング体験会担当",
+  "traP 2025新歓 講習会管轄",
   "traP GitHub Admin",
   "CPCTF 運営",
 ];

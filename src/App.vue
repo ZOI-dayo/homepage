@@ -28,7 +28,8 @@ const works: Work[] = [
     title: "myPOMO",
     role: "App Frontend Team",
     description:
-      "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年春 正式リリース予定",
+      "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年夏 正式リリース予定",
+    image: "/works/myPOMO/myPOMO_logo.png",
     technologies: ["flutter", "dart"],
     developing: true,
   },

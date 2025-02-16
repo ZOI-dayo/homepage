@@ -58,6 +58,8 @@ const activities: string[] = [
   "traP 2025新歓 ガイダンス動画担当",
   "traP 2025新歓 ハッキング体験会担当",
   "traP 2025新歓 講習会管轄",
+  "traP 2025新歓 オリエンテーション担当",
+  "traP 2025新歓 LINE Bot開発担当",
   "traP GitHub Admin",
   "CPCTF 運営",
 ];

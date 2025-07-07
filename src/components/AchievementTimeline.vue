@@ -29,6 +29,21 @@ const colorMap = [
 
 const achievements: Achievement[] = [
   {
+    priority: 6,
+    date: "2025.07.04",
+    title: "ICPC国内予選2025 「Tsukuyom1」 全国19位 / 校内6位",
+  },
+  {
+    priority: 2,
+    date: "2025.06.22",
+    title: "traP春ハッカソン 「Witchcraft: Gem-beats」",
+  },
+  {
+    priority: 5,
+    date: "2025.05.04",
+    title: "ゲームダンジョン8に「酔い覚ましの回顧録」を出展",
+  },
+  {
     priority: 5,
     date: "2025.01.19",
     title: "ABC389 2400perf (117位)",

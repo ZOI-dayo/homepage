@@ -17,10 +17,13 @@ const works: Work[] = [
     developing: true,
   },
   {
-    title: "Antonym",
+    title: "酔い覚ましの回顧録",
     role: "Programmer Team",
     description:
-      "「プレイする映画」を提供するミステリーアドベンチャー\n2025年夏 テストプレイ版リリース予定",
+      "「プレイする映画」を提供するミステリーアドベンチャー\nゲームダンジョン8にプロローグ版を出展しました。",
+    image: "/works/Antonym/thumbnail.png",
+    dark: true,
+    // padding: false,
     technologies: ["unity", "csharp"],
     developing: true,
   },
@@ -54,14 +57,14 @@ const works: Work[] = [
 const activities: string[] = [
   "traP 代表補佐",
   // "GAME^3 Webフロント担当"
-  "traP 2025新歓 特設ページ担当",
-  "traP 2025新歓 ガイダンス動画担当",
-  "traP 2025新歓 ハッキング体験会担当",
-  "traP 2025新歓 講習会管轄",
-  "traP 2025新歓 オリエンテーション担当",
-  "traP 2025新歓 LINE Bot開発担当",
+  // "traP 2025新歓 特設ページ担当",
+  // "traP 2025新歓 ガイダンス動画担当",
+  // "traP 2025新歓 ハッキング体験会担当",
+  // "traP 2025新歓 講習会管轄",
+  // "traP 2025新歓 オリエンテーション担当",
+  // "traP 2025新歓 LINE Bot開発担当",
   "traP GitHub Admin",
-  "CPCTF 運営",
+  "CPCTF2025 運営",
 ];
 
 const certifications: string[] = [

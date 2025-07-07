@@ -19,6 +19,7 @@ defineProps<{
     >
       <img
         :src="work.image"
+        class="w-full"
         :class="{
           'rounded-t-md xl:rounded-l-md xl:rounded-tr-none': !work.padding,
         }"
@@ -34,6 +35,9 @@ defineProps<{
           v-for="technology in work.technologies"
           :key="technology"
           :icon="technology"
+          :style="{
+            '--tw-drop-shadow-color': 'var(--color-white)'
+          }"
           class="size-6 pl-2 drop-shadow-md"
           :class="{
             'fill-primary': !work.dark,

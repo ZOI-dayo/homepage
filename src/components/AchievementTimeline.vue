@@ -30,6 +30,35 @@ const colorMap = [
 const achievements: Achievement[] = [
   {
     priority: 6,
+    date: "2025.11.16",
+    title: "ICPC2025 Taichung Regional 「Tsukuyom1」 28位 / Silver Award",
+    links: {
+      x: "https://x.com/ZOI_dayo/status/1989988218763386967",
+    }
+  },
+  {
+    priority: 4,
+    date: "2025.11.02",
+    title: "工大祭2025にて「酔い覚ましの回顧録」展示",
+  },
+  {
+    priority: 2,
+    date: "2025.09.07",
+    title: "traPの「Illustration Anthology vol.8」に寄稿、COMITIA153にて配布",
+    links: {
+      x: "https://x.com/traPisct/status/1963867193625505907",
+    }
+  },
+  {
+    priority: 5,
+    date: "2025.08.24",
+    title: "自動スケジューリングアプリ「myPOMO」 ベータ版リリース",
+    links: {
+      x: "https://x.com/my_pomo/status/1959481525420077354",
+    }
+  },
+  {
+    priority: 6,
     date: "2025.07.04",
     title: "ICPC国内予選2025 「Tsukuyom1」 全国19位 / 校内6位",
   },

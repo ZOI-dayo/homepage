@@ -12,15 +12,15 @@ const works: Work[] = [
     title: "traP Online Judge",
     role: "Infra Team Leader & Frontend Team",
     description:
-      "traP内で開発中のオンラインジャッジサービス\n2025年春 v0リリース予定",
+      "traP内で開発中のオンラインジャッジサービス\n2025年内 v0リリース予定",
     technologies: ["vuejs", "tailwindcss", "amazonwebservice", "kubernetes"],
     developing: true,
   },
   {
     title: "酔い覚ましの回顧録",
-    role: "Programmer Team",
+    role: "Programmer Team & Graphics Team",
     description:
-      "「プレイする映画」を提供するミステリーアドベンチャー\nゲームダンジョン8にプロローグ版を出展しました。",
+      "ミステリーアドベンチャーゲームです。 捜索範囲はなんと「プレイヤーが経験した会話ログ全て」。小説や映画の主人公になった気持ちで目の前の謎を解決していきましょう。ゲームダンジョン8、工大祭2025にプロローグ版を出展しました。",
     image: "/works/Antonym/thumbnail.png",
     dark: true,
     // padding: false,
@@ -31,9 +31,19 @@ const works: Work[] = [
     title: "myPOMO",
     role: "App Frontend Team",
     description:
-      "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年夏 正式リリース予定",
+      "スケジュールを自動で構築する、新時代タスク管理アプリ\n2025年8月 ベータ版リリース",
     image: "/works/myPOMO/myPOMO_logo.png",
     technologies: ["flutter", "dart"],
+  },
+  {
+    title: "Pioneer Village",
+    role: "Programmer Team",
+    description:
+      "ポストアポカリプスを舞台とした開拓シミュレーションゲームです。探索×開拓×防衛をテーマとして、チームを率いて広大な未踏地へ踏み込み、開拓村を発展させ、敵襲から守り抜きます。\n2025年11月 ゲームダンジョン10に出展しました。",
+    image: "/works/PioneerVillage/thumbnail.png",
+    dark: true,
+    // padding: false,
+    technologies: ["unity", "csharp"],
     developing: true,
   },
   {
@@ -64,7 +74,7 @@ const activities: string[] = [
   // "traP 2025新歓 オリエンテーション担当",
   // "traP 2025新歓 LINE Bot開発担当",
   "traP GitHub Admin",
-  "CPCTF2025 運営",
+  // "CPCTF2025 運営",
 ];
 
 const certifications: string[] = [
@@ -120,9 +130,8 @@ const certifications: string[] = [
       <div class="max-w-full px-8 xl:w-[72rem] xl:p-0">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
-            東京科学大学 学部1年 (24B) / traP<br /><br />
-            中高でWebフロントエンドと競技プログラミング(AtCoder)に触れ、大学に入ってからWebバックエンドにも挑戦しています。<br /><br />
-            競技プログラミングで大量に書いたので最も慣れている言語はC++ですが、HTML/CSS、JavaScript、Dart(Flutter)などいろいろな言語を使っています。最近はGoやC#、SQLにも興味があります。
+            東京科学大学 学部2年 (24B) / traP<br /><br />
+            中高でWebフロントエンドと競技プログラミング(AtCoder)に触れ、大学に入ってからはバックエンドやUnity、お絵描き、作曲など幅広い分野に挑戦しています。
           </p>
         </TopPageContent>
         <TopPageContent title="Works" subtitle="作品">

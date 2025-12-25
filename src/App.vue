@@ -55,6 +55,14 @@ const works: Work[] = [
     technologies: ["go", "mysql"],
   },
   {
+    title: "rucQ",
+    role: "UI Frontend Team",
+    description: "traPの合宿をより楽しく・より便利にするための総合Webアプリ",
+    image: "/rucq.svg",
+    padding: true,
+    technologies: ["vuejs"],
+  },
+  {
     title: "Homepage",
     role: "Developer",
     description: "本Webページ\n2025年1月 リリース",
@@ -80,6 +88,7 @@ const activities: string[] = [
 const certifications: string[] = [
   "AtCoder 2級 (Algo青 / Heu緑)",
   "2級ウェブデザイン技能士",
+  "データベーススペシャリスト",
 ];
 </script>
 

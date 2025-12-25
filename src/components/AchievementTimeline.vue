@@ -30,6 +30,39 @@ const colorMap = [
 const achievements: Achievement[] = [
   {
     priority: 6,
+    date: "2025.12.25",
+    title: "データベーススペシャリスト試験 合格",
+    links: {
+      x: "https://x.com/ZOI_dayo/status/2004027650449592760",
+    }
+  },
+  {
+    priority: 8,
+    date: "2025.12.21",
+    title: "traP冬ハッカソン 最優秀賞 『Super Ankars』",
+    links: {
+      // x: "",
+      // TODO
+    }
+  },
+  {
+    priority: 2,
+    date: "2025.12.17",
+    title: "映像『Coffee Break?』作成",
+    links: {
+      x: "https://x.com/ZOI_dayo/status/2001442230007927028",
+    }
+  },
+  {
+    priority: 2,
+    date: "2025.11.21",
+    title: "無色透名祭3に「夕凪に別れを告げたいから。」投稿",
+    links: {
+      x: "https://x.com/ZOI_dayo/status/1992931755607871909",
+    }
+  },
+  {
+    priority: 6,
     date: "2025.11.16",
     title: "ICPC2025 Taichung Regional 「Tsukuyom1」 28位 / Silver Award",
     links: {

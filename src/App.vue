@@ -73,7 +73,7 @@ const works: Work[] = [
 ];
 
 const activities: string[] = [
-  "traP 代表補佐",
+  "traP 代表",
   // "GAME^3 Webフロント担当"
   // "traP 2025新歓 特設ページ担当",
   // "traP 2025新歓 ガイダンス動画担当",

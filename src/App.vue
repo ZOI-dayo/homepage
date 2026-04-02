@@ -139,7 +139,7 @@ const certifications: string[] = [
       <div class="max-w-full px-8 xl:w-[72rem] xl:p-0">
         <TopPageContent title="About" subtitle="自己紹介">
           <p>
-            東京科学大学 学部2年 (24B) / traP<br /><br />
+            東京科学大学 学部3年 (24B) / traP (代表)<br /><br />
             中高でWebフロントエンドと競技プログラミング(AtCoder)に触れ、大学に入ってからはバックエンドやUnity、お絵描き、作曲など幅広い分野に挑戦しています。
           </p>
         </TopPageContent>

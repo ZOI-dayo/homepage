@@ -183,7 +183,7 @@ const certifications: string[] = [
     <div
       class="w-full items-center border-t border-primary/50 px-8 py-4 text-right text-text-primary/50"
     >
-      &copy; 2025 ZOI_dayo
+      &copy; 2026 ZOI_dayo
     </div>
   </div>
 </template>
